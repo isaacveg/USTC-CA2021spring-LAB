@@ -1,0 +1,34 @@
+
+mytestCSR.om:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00010054 <j_target-0x60>:
+   10054:	01100093          	li	ra,17
+   10058:	01200113          	li	sp,18
+   1005c:	01300213          	li	tp,19
+   10060:	01400293          	li	t0,20
+   10064:	01500313          	li	t1,21
+   10068:	01600393          	li	t2,22
+   1006c:	00a00513          	li	a0,10
+   10070:	00b00593          	li	a1,11
+   10074:	00c00613          	li	a2,12
+   10078:	00d00713          	li	a4,13
+   1007c:	00e00793          	li	a5,14
+   10080:	00f00813          	li	a6,15
+   10084:	00000013          	nop
+   10088:	00000013          	nop
+   1008c:	00000013          	nop
+   10090:	00000013          	nop
+   10094:	00a09573          	csrrw	a0,0xa,ra
+   10098:	00b125f3          	csrrs	a1,0xb,sp
+   1009c:	00c1b673          	csrrc	a2,0xc,gp
+   100a0:	00000013          	nop
+   100a4:	00000013          	nop
+   100a8:	00a556f3          	csrrwi	a3,0xa,10
+   100ac:	00c667f3          	csrrsi	a5,0xc,12
+   100b0:	00b5f773          	csrrci	a4,0xb,11
+
+000100b4 <j_target>:
+   100b4:	00000f6f          	jal	t5,100b4 <j_target>

@@ -1,0 +1,24 @@
+
+csrtest.om:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00010054 <_start>:
+   10054:	00100293          	li	t0,1
+   10058:	00000313          	li	t1,0
+   1005c:	000013b7          	lui	t2,0x1
+   10060:	f0f38393          	addi	t2,t2,-241 # f0f <_start-0xf145>
+   10064:	0f000e13          	li	t3,240
+   10068:	00200e93          	li	t4,2
+   1006c:	01200f13          	li	t5,18
+   10070:	01600f93          	li	t6,22
+   10074:	00129373          	fsflags	t1,t0
+   10078:	0013a373          	csrrs	t1,fflags,t2
+   1007c:	0013b373          	csrrc	t1,fflags,t2
+   10080:	0020d373          	fsrmi	t1,1
+   10084:	002fe373          	csrrsi	t1,frm,31
+   10088:	002ff373          	csrrci	t1,frm,31
+
+0001008c <infinity_loop>:
+   1008c:	0000006f          	j	1008c <infinity_loop>
