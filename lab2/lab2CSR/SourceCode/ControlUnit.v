@@ -29,7 +29,7 @@ module ControlUnit(
     output wire [1:0] AluSrc1D,
     output reg [2:0] ImmType,
     //CSR
-    input [4:0] Rs1E,
+    input [4:0] Rs1E,//其实没用
     output reg CSRwrenD,
     output reg CSRReadD
     );
