@@ -1,6 +1,6 @@
 # USTC-CA2021spring-LAB
 Repository for USTC-ComputerArchitecture 2021spring labs.  
-If this repository did help, PLEASE Star this to support me! Thanks.
+If this repository did help, PLEASE ***Star*** this to support me! Thanks.
 ## Lab 1
 Answer the questions and fix bugs in given graph.
 ## Lab 2
